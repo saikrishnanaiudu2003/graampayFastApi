@@ -1,0 +1,73 @@
+.main-home-page{
+    height: calc(100vh - 100px); /* Adjust 100px according to your layout */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 20px; 
+    scroll-behavior: smooth;
+
+    
+}
+.main-home-page::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+.flex-dashboard-text{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.dashborad-text{
+    margin-left: 20px;
+    margin-top: 55px;
+    line-height: 10%;
+}
+.main-home-head{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+}
+.viyona-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3408A4;
+}
+.viyona-span{
+    color: #212529BF;
+    font-size: 14px;
+    font-weight: 400;
+}
+.home-main-stats-cards{
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.first-stats-card{
+    height: 345px;
+    width: 265px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    
+}
+.year-stats-card{
+    height: 345px;
+    width: 539px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFCFCF;
+}
+.slary-stats-card{
+    height: 367px;
+    width: 721px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    margin-bottom: 100px;
+}
+.todo-stats-card{
+    height: 367px;
+    width: 356px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    margin-bottom: 100px;
+}
