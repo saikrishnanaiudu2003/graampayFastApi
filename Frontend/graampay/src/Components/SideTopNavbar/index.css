@@ -2,6 +2,8 @@
 .navbar-container {
     display: flex;
     height: 100vh;
+    
+
 }
 
 /* Top Navigation Bar */
@@ -61,13 +63,18 @@
     width: 250px;
     padding-top: 60px; /* Push below the top bar */
     color: black;
-    overflow-y: auto;
-    height: 100%;
+    
+    height: calc(100vh - 100px);
     transition: width 0.3s;
     position: fixed;
     z-index:0;
     top: 0;
-    
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.side-navbar::-webkit-scrollbar{
+  display: none;
 }
 
 .side-navbar.collapsed {
@@ -84,11 +91,10 @@
     padding: 15px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-}
-.menu-item{
     font-size: 15px;
     font-weight: 400;
 }
+
 
 /* Hover effect for menu items */
 .navbar-menu .menu-item:hover {
@@ -268,17 +274,39 @@
     border: 1px solid #F0F0F0;
     
   }
-  
 
-  
+  /* Dropdown styling */
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
-  
+/* Show dropdown with animation */
+.dropdown-menu.show {
+  opacity: 1;
+  max-height: 200px; /* Adjust based on number of items */
+}
 
+/* Individual list items */
+.menu-item{
+  font-size: 25px;
+}
+.left-icon{
+  margin-left: 48px;
 
+}
 
-
-
-
+.bottom-icon{
+  margin-left: 48px;
+}
+/* .left-icon1{
+  margin-left:90px;
+} */
 
 
 
