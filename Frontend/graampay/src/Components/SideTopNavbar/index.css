@@ -335,14 +335,20 @@
 @media (max-width: 768px) {
     .side-navbar {
         width: 80px;
+        display: none;
     }
 
     .side-navbar.open {
         width: 250px;
     }
-
+    .top-bar{
+      display: none;
+    }
     .top-navbar {
         justify-content: space-between;
         padding-left: 90px;
+        
     }
 }
+
+
